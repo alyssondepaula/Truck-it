@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+#root {
+
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+
+
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+  }
