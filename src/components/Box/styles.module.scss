@@ -1,0 +1,33 @@
+.container {
+    
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    z-index: 1;
+    width: 25rem;
+    height: 25rem;
+    border-radius: .5rem;
+    background-color: var(--color-white);
+
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 1rem;
+
+        text {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+}
