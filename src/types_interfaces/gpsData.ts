@@ -71,5 +71,5 @@ export type TGpsData = {
 }
 
  type TPicture = {
-    address?: string;
+    address: string;
 }
