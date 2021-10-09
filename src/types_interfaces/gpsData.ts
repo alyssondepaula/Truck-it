@@ -13,7 +13,7 @@ export type TGpsData = {
     vehicle: TVehicle;
 }
 
- type TCourses = {
+export type TCourses = {
 
     start_at: string;
     end_at: string;
@@ -29,7 +29,7 @@ export type TGpsData = {
     
 }
 
- type TStopPoints = {
+export type TStopPoints = {
 
     type: string;
     crs: TCrs;
@@ -37,20 +37,20 @@ export type TGpsData = {
     
 }
 
- type TCrs = {
+export type TCrs = {
 
     type: string;
     properties: TProperties;
     
 }
 
- type TProperties = {
+export type TProperties = {
 
     name: string;
 
 }
 
- type TGps = {
+export type TGps = {
 
     longitude: number;
     latitude: number;
@@ -62,7 +62,7 @@ export type TGpsData = {
 
 }
 
- type TVehicle = {
+export type TVehicle = {
     plate: string;
     vin: string;
     color: string;
@@ -70,6 +70,6 @@ export type TGpsData = {
 
 }
 
- type TPicture = {
+export type TPicture = {
     address: string;
 }
