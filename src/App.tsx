@@ -4,6 +4,7 @@ import './styles/globals.scss';
 import styles from './styles.module.scss'
 import { Box } from './components/Box';
 import { TCourses } from './types_interfaces/gpsData';
+import { Header } from './components/Header';
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
   return (
     <div className={styles.container}>
     <Box setSelectedCourse={setSelectedCourse} selectedCourse={selectedCourse}/>
+    <Header/>
     <Map selectedCourse={selectedCourse}/>
     </div>
   );
