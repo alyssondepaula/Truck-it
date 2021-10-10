@@ -3,6 +3,7 @@ import { getDataFake } from '../../services/getDataFake';
 import { TCourses, TGpsData } from '../../types_interfaces/gpsData';
 import Select from 'react-select'
 import styles from './styles.module.scss'
+import { useTranslation } from '../../hooks/useTranslation';
 
 interface IBoxProps {
     selectedCourse: TCourses | null
@@ -30,12 +31,6 @@ export function Box({selectedCourse,setSelectedCourse}: IBoxProps): JSX.Element 
   
   
     },[setSelectedCourse])
-
-    const options = [
-        { value: 'chocolate', label: 'Chocolate' },
-        { value: 'strawberry', label: 'Strawberry' },
-        { value: 'vanilla', label: 'Vanilla' }
-      ]
 
     const convertiondate = (time: string): string =>{
 
@@ -71,11 +66,11 @@ export function Box({selectedCourse,setSelectedCourse}: IBoxProps): JSX.Element 
         <div className={styles.container}>
 
             <div>
-                <text>Exibir rotas</text>
+                <text>{useTranslation('box.heading')}</text>
             </div>
 
             <form>
-                <label>Selecione o horario de saida do carro:</label>
+                <label>{useTranslation('box.subHeading')}</label>
                 <SelectComponent/>
             </form>
 
