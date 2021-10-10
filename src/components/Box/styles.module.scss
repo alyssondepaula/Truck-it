@@ -5,9 +5,11 @@
     right: 2rem;
     z-index: 1;
     width: 25rem;
-    height: 25rem;
+    height: 16rem;
     border-radius: .5rem;
     background-color: var(--color-white);
+    -webkit-box-shadow: -9px 8px 39px -8px rgba(0,0,0,0.55); 
+    box-shadow: -9px 8px 39px -8px rgba(0,0,0,0.55);
 
     div {
         display: flex;

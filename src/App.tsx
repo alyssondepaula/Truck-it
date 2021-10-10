@@ -9,10 +9,9 @@ function App() {
 
   const [selectedCourse, setSelectedCourse] = useState<TCourses | null>(null);
 
-
   return (
     <div className={styles.container}>
-    <Box setSelectedCourse={setSelectedCourse}/>
+    <Box setSelectedCourse={setSelectedCourse} selectedCourse={selectedCourse}/>
     <Map selectedCourse={selectedCourse}/>
     </div>
   );
