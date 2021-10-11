@@ -20,9 +20,9 @@ export function SideMenu() {
               {useTranslation('sideMenu.routes')}
               </NavLink >
           
-              <NavLink to="/about" activeClassName={styles.active} >{useTranslation('sideMenu.myCars')}</NavLink>
+              <NavLink to="/cars" activeClassName={styles.active} >{useTranslation('sideMenu.myCars')}</NavLink>
           
-              <NavLink to="/users" activeClassName={styles.active}>{useTranslation('sideMenu.settings')}</NavLink>
+              <NavLink to="/settings" activeClassName={styles.active}>{useTranslation('sideMenu.settings')}</NavLink>
          
         </nav>
         <button className={styles.button}>

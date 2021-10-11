@@ -14,7 +14,7 @@ interface IMapProps {
 
 const linePaint = {
   'line-color': 'red',
-  'line-width': 3
+  'line-width': 4
 };
 
 
@@ -44,6 +44,8 @@ function Map({selectedCourse}: IMapProps) {
   className={styles.mapContainer}
   
 >
+
+     {/** Desenhamos a linha na tela */}
      <GeoJSONLayer
 
           data={{

@@ -5,16 +5,18 @@ import {
   Route,
 } from "react-router-dom";
 import { Home } from "./pages/appRoutes/Home";
+import { MyCars } from "./pages/appRoutes/MyCars";
+import { Settings } from "./pages/appRoutes/settings";
 
 export default function Routes() {
   return (
     <Router>
         <Switch>
-          <Route path="/about">
-            <About />
+          <Route path="/settings">
+            <Settings />
           </Route>
-          <Route path="/users">
-            <Users />
+          <Route path="/cars">
+            <MyCars />
           </Route>
           <Route path="/">
             <Home />
@@ -22,13 +24,4 @@ export default function Routes() {
         </Switch>
     </Router>
   );
-}
-
-
-function About() {
-  return <h2>About</h2>;
-}
-
-function Users() {
-  return <h2>Users</h2>;
 }
