@@ -1,4 +1,4 @@
-Tecnologias usadas:
+Principais Tecnologias usadas:
 React: https://pt-br.reactjs.org/
 Typescript: https://www.typescriptlang.org/
 Sass: https://sass-lang.com/
@@ -9,9 +9,9 @@ i18next-browser-languageDetector: https://github.com/i18next/i18next-browser-lan
 React-I18n: https://react.i18next.com/
 
 
-Decisões tecnologias (resumo)
+Decisões (resumo)
 
-Optei por usar ReactJs pois possuo um conhecimento prévio da Lib e com boa curva do Native que foi a primeira lib que aprendi. Dentre os estilos de estilização acabei optando por usar sass, mas sem motivo especifico, meus conhecimentos em styled-components é maior, mas sass é algo que tenho visto com mais frequência e escolhi por questões de aprendizado. Usei uma lib de select, react-select por opções de estilização padrões da lib. A respeito de mapas optei no início a usar uma lib do google maps para react (react-google-maps), mas por questões de aprovação do console do google de cartões virtuais acabei colocando outra lib como alternativa: (React-Mapbox-GL).
+Optei por usar ReactJs pois possuo um conhecimento prévio da Lib e com boa curva do Native que foi a primeira lib que aprendi. Dentre os estilos de estilização acabei optando por usar sass, mas sem motivo especifico, meus conhecimentos em styled-components é maior, mas sass é algo que tenho visto com mais frequência e escolhi por questões de aprendizado. Usei uma lib de select, react-select por opções de estilização padrões da lib. A respeito de mapas optei no início a usar uma lib do google maps para react (react-google-maps), mas por questões de aprovação do console do google de cartões virtuais acabei colocando outra lib como alternativa: (React-Mapbox-GL). Usei Typescript para escrita dos códigos.
 
 
 Linha de desenvolvimento:
@@ -30,3 +30,5 @@ Ao terceiro dia procurei realizar os últimos links das informações (Response 
 
 
 Ao acabar essas 2 linhas no quarto dia procurei começar a desenhar os cars na tela, ao notar que a lib de mapas não tinha suporte para tal feito. Procurei alternativas para realizar o procedimento, mas infelizmente sem sucesso.
+
+Mas aprendi a lidar com sprites o que pode se tratar de apenas uma mudança de lib de mapa.
