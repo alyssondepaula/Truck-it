@@ -1,20 +1,21 @@
-import { useState } from 'react';
-import Map from './components/Map';
 import './styles/globals.scss';
 import styles from './styles.module.scss'
-import { Box } from './components/Box';
-import { TCourses } from './types_interfaces/gpsData';
 import { Header } from './components/Header';
+import Routes from './routes';
+import { SideMenu } from './components/SideMenu';
 
 function App() {
 
-  const [selectedCourse, setSelectedCourse] = useState<TCourses | null>(null);
+  
 
   return (
-    <div className={styles.container}>
-    <Box setSelectedCourse={setSelectedCourse} selectedCourse={selectedCourse}/>
+    <div className={styles.main}>
+      
+    <SideMenu/>
+    <div>
     <Header/>
-    <Map selectedCourse={selectedCourse}/>
+    <Routes/>
+    </div>
     </div>
   );
 }

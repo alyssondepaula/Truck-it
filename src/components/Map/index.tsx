@@ -70,10 +70,10 @@ function Map({selectedCourse}: IMapProps) {
   return <Map
   style="mapbox://styles/mapbox/streets-v9"
   center={selectedCourse ? [ selectedCourse.gps[0].longitude, selectedCourse.gps[0].latitude ] : [-46.28054, -23.963214]}
-  zoom={[15]}
+  zoom={[13.5]}
   containerStyle={{
-    height: '100vh',
-    width: '100vw'
+    height: '90vh',
+    width: '82vw'
   }}
 >
 
