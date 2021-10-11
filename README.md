@@ -1,46 +1,32 @@
-# Getting Started with Create React App
+Tecnologias usadas:
+React: https://pt-br.reactjs.org/
+Typescript: https://www.typescriptlang.org/
+Sass: https://sass-lang.com/
+React-Select: https://react-select.com/home
+React Mapbox GL:  https://github.com/alex3165/react-mapbox-gl/blob/master/docs/API.md
+I18next:  https://www.i18next.com/
+i18next-browser-languageDetector: https://github.com/i18next/i18next-browser-languageDetector
+React-I18n: https://react.i18next.com/
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+Decisões tecnologias (resumo)
 
-In the project directory, you can run:
+Optei por usar ReactJs pois possuo um conhecimento prévio da Lib e com boa curva do Native que foi a primeira lib que aprendi. Dentre os estilos de estilização acabei optando por usar sass, mas sem motivo especifico, meus conhecimentos em styled-components é maior, mas sass é algo que tenho visto com mais frequência e escolhi por questões de aprendizado. Usei uma lib de select, react-select por opções de estilização padrões da lib. A respeito de mapas optei no início a usar uma lib do google maps para react (react-google-maps), mas por questões de aprovação do console do google de cartões virtuais acabei colocando outra lib como alternativa: (React-Mapbox-GL).
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Linha de desenvolvimento:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Foram 4 dias de grandes aprendizados e conhecimento...
 
-### `npm test`
+Ao primeiro dia procurei entender o a response do gps, ao conhecimento da mesma procurei “tipar” todos esses dados, o que poderia ajudar em uma aplicação real em produção, iniciei o projeto e já coloquei os types.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Ao segundo dia com as libs de estilização procurei colocar o mapa e a box de seleção das rotas e começar a fazer os links das informações com os componentes.
 
-### `npm run build`
+Ao terceiro dia procurei realizar os últimos links das informações (Response em JSON) e exibição da linha na tela, ao ver o funcionamento da mesma separei em 2 linhas temporais de pensamento.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1: Acabar as estilizações e adicionar header, menu, rotas e o sistema de internacionalização.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2: Estudar sobre sprites com auxílio de docs pois é um conhecimento que eu não tinha.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Ao acabar essas 2 linhas no quarto dia procurei começar a desenhar os cars na tela, ao notar que a lib de mapas não tinha suporte para tal feito. Procurei alternativas para realizar o procedimento, mas infelizmente sem sucesso.
