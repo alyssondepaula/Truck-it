@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next'
 import brasil from '../../assets/flags/brasil.svg'
 import eua from '../../assets/flags/eua.svg'
 import styles from './styles.module.scss'
+import {useTranslation as myHookUseTranslation } from '../../hooks/useTranslation'
 
 
 const Flag = ({ image, isSelected, ...props }: any) => (
@@ -20,7 +21,7 @@ export function FlagSelector(){
   const selectedLanguage = i18n.language
   return (
     <div className={styles.container}>
-      <text>Selecione o idioma</text>
+      <text>{myHookUseTranslation('flagSelector.selectLanguage')}</text>
       <div>
       <Flag
         image={brasil}
