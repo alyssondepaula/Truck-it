@@ -7,39 +7,6 @@ interface IMapProps {
   selectedCourse: TCourses | null
 }
 
-
-interface ILine{
-
-  coordinates: any[][]
-
-}
-
-const geojson = {
-  'type': 'FeatureCollection',
-  'features': [
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'LineString',
-        'coordinates': [
-          [
-            -46.28054,
-            -23.963214,
-          ],
-         [
-            -46.280544,
-            -23.96325,
-         ],
-        [
-          -46.280536,
-            -23.96319,
-         ]
-        ]
-      }
-    }
-  ]
-};
-
 const linePaint = {
   'line-color': 'red',
   'line-width': 5
