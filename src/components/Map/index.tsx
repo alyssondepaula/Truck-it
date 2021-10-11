@@ -6,7 +6,9 @@ import 'mapbox-gl/dist/mapbox-gl.css';
 import styles from './styles.module.scss'
 import { TCourses } from '../../types_interfaces/gpsData';
 
+
 import React from 'react';
+
 
 interface IMapProps {
   selectedCourse: TCourses | null
@@ -22,11 +24,9 @@ const linePaint = {
 
 function Map({selectedCourse}: IMapProps) {
 
- 
 
   const Map = ReactMapboxGl({
-    accessToken:
-      'pk.eyJ1IjoiYWx5c3NvbmpyZGVwYXVsYSIsImEiOiJja3VldWFnczcwNXB4Mm5waGh6MzFtaTN1In0.77fk368XpHheK6pHc4bcHw'
+    accessToken: process.env.REACT_APP_KEY_MAP || ''
   });
 
   let list: number[][] = [];
