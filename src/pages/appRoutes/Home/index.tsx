@@ -6,6 +6,7 @@ import { TCourses } from "../../../types_interfaces/gpsData";
 export function Home() {
 
     const [selectedCourse, setSelectedCourse] = useState<TCourses | null>(null);
+    
 
     return (
         <>

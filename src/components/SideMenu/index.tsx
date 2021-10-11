@@ -2,6 +2,7 @@ import { NavLink } from 'react-router-dom'
 import { useTranslation } from '../../hooks/useTranslation'
 import styles from './styles.module.scss'
 
+
 export function SideMenu() {
     return (
     

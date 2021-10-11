@@ -11,9 +11,9 @@ function App() {
   return (
     <div className={styles.main}>
       
-    <SideMenu/>
+    <SideMenu />
     <div>
-    <Header/>
+    <Header />
     <Routes/>
     </div>
     </div>
